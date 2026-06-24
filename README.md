@@ -17,8 +17,8 @@ I began with three simple regressions to establish baseline relationships, then 
 
 ## Key Findings
 
-- **Footfall** is the dominant predictor, explaining 73.6% of sales variance in isolation and retaining a coefficient of **£33.65 per visitor** in the full model.
-- **Marketing spend** has a positive but diminished effect in the multiple model: **£1.19 per £1 spent**, down from £2.13 in the simple regression, indicating that part of its apparent impact is attributable to correlated factors like footfall and store location.
+- **Footfall** is the dominant predictor, explaining 73.6% of sales variance in isolation and retaining a coefficient of **$33.65 per visitor** in the full model.
+- **Marketing spend** has a positive but diminished effect in the multiple model: **$1.19 per $1 spent**, down from $2.13 in the simple regression, indicating that part of its apparent impact is attributable to correlated factors like footfall and store location.
 - **Discount percentage** is not a statistically significant predictor of sales (p = 0.189) and carries a negative coefficient in both simple and multiple specifications.
 - **Store type** exerts substantial influence. Airport stores outperform the Residential baseline by approximately **£41,616**, Mall stores by **£29,423**, and High Street stores by **£18,404**, holding all other variables constant.
 - **Inventory availability** delivers a measurable return: each 1% improvement corresponds to roughly **£3,060** in additional monthly sales.
@@ -28,21 +28,24 @@ I began with three simple regressions to establish baseline relationships, then 
 ## Repository Structure
 
 ```
+part3_regression_insights/
 ├── data/
-│   ├── business_regression_data.xlsx       # Raw data and data dictionary
-│   ├── regression_workbook.xlsx            # Cleaned data, dummy variables, model outputs
-│   └── regression_summary.xlsx             # Summary tables for quick reference
-├── docs/
-│   ├── 01_DATA_AND_DUMMY_VARIABLES.md    # Data preparation and encoding methodology
-│   ├── 02_REGRESSION_MODELS.md             # Model specifications and coefficient interpretation
-│   ├── 03_MODEL_COMPARISON_AND_RESIDUALS.md # Fit statistics, significance testing, residual analysis
-│   └── 04_BUSINESS_RECOMMENDATIONS.md      # Strategic recommendations and analytical limitations
+│   └── business_regression_data.xlsx
+├── analysis/
+│   ├── regression_workbook.xlsx
+│   ├── model_comparison.md
+│   └── residual_analysis.md
+├── outputs/
+│   ├── regression_summary.xlsx
+│   ├── final_recommendation.md
+│   └── model_equations.md
 ├── screenshots/
-│   ├── simple_regression_marketing.png
-│   ├── simple_regression_footfall.png
+│   ├── simple_regression_output.png
 │   ├── multiple_regression_output.png
-│   └── residual_plot.png
+│   ├── residuals_preview.png
+│   └── model_comparison_preview.png
 └── README.md
+
 ```
 
 ---
